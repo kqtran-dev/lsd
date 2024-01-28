@@ -1,0 +1,54 @@
+classic: false
+
+# layout.
+# Possible values: permission, user, group, context, size, date, name, inode, links, git
+blocks:
+  - permission
+  - user
+  - group
+  - date
+  - name
+  - size
+
+color:
+  when: auto
+  # How to colorize the output.
+  # When "classic" is set, this is set to "no-color".
+  # Possible values: default, custom
+  # When "custom" is set, lsd will look in the config directory for `colors.yaml`.
+  theme: default
+
+# Possible values: date, relative, '+<date_format>'
+# `date_format` will be a `strftime` formatted value. e.g. `date: '+%d %b %y %X'` will give you a date like this: 17 Jun 21 20:14:55
+date: '+%y-%m-%d %X'
+
+dereference: false
+
+display: almost-all
+
+icons:
+  when: auto
+  theme: fancy
+  separator: " "
+
+indicators: true
+
+layout: grid
+
+recursion:
+  enabled: false
+size: default
+
+permission: octal
+
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: first
+
+no-symlink: false
+total-size: false
+hyperlink: never
+symlink-arrow: ⇒
+header: true
+
